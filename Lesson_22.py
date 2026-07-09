@@ -13,7 +13,7 @@ minimum = my_list[0]
 for item in my_list:
     if item < minimum:
         minimum = item
-print("Minimum value:", minimum)
+print("minimum value:", minimum)
 
 #Calculate the sum of all elements in a list.
 summary = 0

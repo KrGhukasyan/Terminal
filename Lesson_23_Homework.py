@@ -18,4 +18,37 @@ print("List without duplications:", my_uniques)
 
 my_numbers = [2, 4, 6, 8, 10, 4, 6, 12, 2]
 print(set(my_numbers))
+
+my_list = [4, 6, 8, 9, 11, 2, 25, 38, 49]
+largest = my_list[0]
+
+for number in my_list:
+    if number > largest:
+        largest = number
+print("Largest number:", largest)
+
+
+my_list = [12, 5, 8, 25, 15, 7]
+
+minimum = my_list[0]
+
+for number in my_list:
+    if number < minimum:
+        minimum = number
+
+print("minimum number:", minimum)
  
+my_list = [12, 5, 8, 25, 15, 7]
+
+largest = my_list[0]
+second_largest = my_list[1]
+
+for number in my_list:
+    if number > largest:
+        second_largest = largest
+        largest = number
+
+    elif number > second_largest:
+        second_largest = number
+
+print("Second largest number:", second_largest)

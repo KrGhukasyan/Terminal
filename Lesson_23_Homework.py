@@ -6,4 +6,16 @@ for list in my_list:
         unique_list.append(list)
 print("original list:", my_list)
 print("List without duplicates:", unique_list)
-        
+
+
+my_numbers = [2, 4, 6, 8, 10, 4, 6, 12, 2] 
+my_uniques = []
+for list in my_numbers:
+    if list not in my_uniques:
+        my_uniques.append(list)
+print("original list:", my_numbers)
+print("List without duplications:", my_uniques)
+
+my_numbers = [2, 4, 6, 8, 10, 4, 6, 12, 2]
+print(set(my_numbers))
+ 

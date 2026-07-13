@@ -52,3 +52,12 @@ for number in my_list:
         second_largest = number
 
 print("Second largest number:", second_largest)
+
+
+my_list = [1, 3, 5, 7, 2, 3, 7, 9]
+numbers = []
+for list in my_list:
+    if list not in numbers:
+        numbers.append(list)
+print("original list:", my_list)
+print("without duplicates:", numbers)

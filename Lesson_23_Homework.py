@@ -61,3 +61,42 @@ for list in my_list:
         numbers.append(list)
 print("original list:", my_list)
 print("without duplicates:", numbers)
+
+my_numbers = [10, 20, 30, 40, 50, 60]
+my_numbers.pop(5)
+my_numbers.pop(4)
+my_numbers.pop(0)
+print(my_numbers)
+
+
+my_numbers = [10, 20, 30]
+del my_numbers
+print(my_numbers)
+
+
+number_list = [5, 10, 15, 20, 25, 30]
+entered_number = int(input("Enter a number: "))
+if entered_number in number_list:
+    print(f"The number {entered_number} exists in the list.")
+
+    if entered_number % 2 == 0:
+        print(f"The number {entered_number} is even.")
+    else:
+        print(f"The number {entered_number} is odd.")
+else:
+    print(f"The number {entered_number} is not in the list.")
+
+
+    for number in range(7):
+    if number == 3 or number == 6:
+        continue
+    print(number)
+
+a = 0
+b = 1
+
+while a <= 50:
+    print(a, end=" ")
+    c = a + b
+    a = b
+    b = c
